@@ -7,6 +7,15 @@ This repository uses a Git Flow-style branching model.
 - `main`: production-ready code only.
 - `develop`: integration branch for the next release.
 
+## Connect a remote once
+
+After creating an empty repository on your Git hosting service, connect it and publish the permanent branches:
+
+```bash
+git remote add origin <repository-url>
+git push -u origin main develop
+```
+
 ## Branch naming
 
 - `feature/<short-description>`: new work branched from `develop`.
